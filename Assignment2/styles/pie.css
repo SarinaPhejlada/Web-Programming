@@ -1,0 +1,73 @@
+.main{
+    background-color: #EA73A6;
+    height: 100%;
+    cursor:url(../src/slice.png), auto;
+    overflow: hidden;
+    font-family: Georgia;
+}
+html, body{
+    margin: 0px;
+    padding: 0px;
+}
+h1{
+    text-align: center;
+    border: 12px outset #6AACD5;
+    background-color: #EA95F6;
+}
+h2{
+    text-align: center;
+    border: 12px inset #EA95F6;
+    background-color: #6AACD5;
+}
+h3{
+    color: #FFFFFF;
+    margin-left: 20px;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+img{
+    float: left;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+p{
+    font-weight: bold;
+}
+span img{
+    float: right;
+    margin-right: 50px;
+}
+ol li span{
+    font-weight: bold;
+}
+.ingredients{
+    column-count: 2;
+}
+.ingredients ul{
+    list-style-image: url('../src/lemon.png'); 
+}
+.menu ul{
+    list-style-type: none;
+    margin: 20px;
+    padding: 0;
+    overflow: hidden;   
+}
+.menu li{
+    float: left;
+    border-right: 20px solid #6CC8DB;
+    padding-left: 10px;
+}
+.menu li a{
+    display: block;
+    color: #003366;
+    text-align: center;
+    font-weight: bold;
+    padding: 8px;
+    text-decoration: none;
+    background-color: #3AA7EB;
+}
+.menu a:hover{
+    background-color: #FFFFFF;
+}
+.link{
+    text-align: center;
+}

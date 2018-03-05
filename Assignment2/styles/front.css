@@ -1,0 +1,77 @@
+.main{
+    background-color: #FFCC00;
+    font-family: Georgia;
+    color: #000000;
+    overflow: hidden;
+    cursor:url(../src/bean.png), auto;
+}
+html, body{
+    margin: 0px;
+    padding: 0px;
+}
+h1, h2{
+    text-align: center;
+    font-family: verdana;
+    border-style: solid;
+    border-color: #F0F0F0;
+    background-color: #F0F0F0;
+    color: #A4A400;
+    
+}
+img{
+    float: right;
+}
+h4{
+    text-align: right;
+    margin-right: 120px;
+}
+.prep h3, .prep p, .in h3, .in p{
+    display: inline;
+}
+.ingredients ul{
+    list-style-image: url('../src/tomato.png'); 
+}
+caption{
+    background-color: #F0F0F0;
+    color: #A4A400;
+    font-weight: bold;
+}
+table{
+    background-color: #CC9933;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th{
+    background-color: #003366;
+    border: 2px solid #FFFFFF;
+    padding: 5px;
+}
+td{
+    border: 2px solid #FFFFFF;
+    padding: 5px;
+}
+.menu ul{
+    list-style-type: none;
+    margin: 20px;
+    padding: 0;
+    overflow: hidden;   
+}
+.menu li{
+    float: left;
+    border-right: 20px solid #003366;
+    padding-left: 10px;
+}
+.menu li a{
+    display: block;
+    color: #003366;
+    text-align: center;
+    font-weight: bold;
+    padding: 8px;
+    text-decoration: none;
+    background-color: rgb(241, 236, 134);
+}
+.link{
+    text-align: right;
+}

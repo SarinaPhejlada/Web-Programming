@@ -1,0 +1,54 @@
+.main{
+    font-family: Georgia;
+    color: #FFFFFF;
+    background-image: url(../src/bubble.jpg);
+    background-position: center;
+    background-repeat: repeat-y;
+    background-repeat: repeat-x;
+    background-size: cover;
+    cursor:url(../src/pineapple.png), auto;
+}
+body, html{
+    margin: 0px;
+    padding: 0px;
+}
+h1{
+    border: 12px inset #000000;
+    background-color: #FFFFFF;
+    margin: 10px;
+    opacity: 0.6;
+    text-align: center;
+    color:#000000;
+    text-shadow: 1px 1px 2px #15CF6E, 0 0 25px #3ADEBE, 0 0 5px #339887;
+}
+.menu ul{
+    list-style-type: none;
+    margin: 20px;
+    padding: 0;
+    overflow: hidden;   
+}
+.menu li{
+    float: left;
+    border-right: 20px solid #6CC8DB;
+    padding-left: 10px;
+}
+.menu li a{
+    display: block;
+    color: #003366;
+    text-align: center;
+    font-weight: bold;
+    padding: 8px;
+    text-decoration: none;
+    background-color: #3AA7EB;
+}
+.menu a:hover{
+    background-color: #FFFFFF;
+}
+.link{
+    text-align: right;
+}
+img{
+    height: auto;
+    width: auto;
+    max-width: 100%;
+}
