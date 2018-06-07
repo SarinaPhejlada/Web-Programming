@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 7</title>
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src = "scripts.js"></script>
+        <style>
+            .hidden{
+                display: none;
+            }
+            body{
+                background-color: lightsalmon;
+                text-align: center;
+            }
+            ul{
+                list-style-position: inside;
+                text-align: left;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Question 1</h1>
+        Payment:<br>
+        <input type = "radio" name = "pay" id = "card"/>Credit Card
+        <input type = "radio" name = "pay" id = "wire"/>Wire Transfer<br>
+        <div id = "extraC" class = "hidden">
+            Card number: <input type = "number" id = "num"/> Expiration: <input type = "number" id = "month" size="1"/> / <input type = "number" id = "year" size="1"/>
+            3-digit security number:<input type = "number" id = "pin" size="1"/>
+        </div>
+        <button type = "submit" name = "pay" id = "buy" onclick = "check()">Buy!</button>
+        <div id = "result"></div>
+        <div id = "extraW" class = "hidden">
+            Transfer the amount to: reg. $957.00, to account 0009286322
+        </div>
+        <hr>
+        <h1>Questions 2</h1>
+        <ul id = "list" class = "removable">
+            <li id = "eins" draggable="true" ondragstart="drag(event)">Potatoes</li>
+            <li id = "zwei" draggable="true" ondragstart="drag(event)">Lemons</li>
+            <li id = "drei" draggable="true" ondragstart="drag(event)">Wings</li>
+        </ul>
+        <br>
+        <img id="drag1" src="trash.png" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <hr>
+        <h1>Question 3</h1>
+        <ul id = "otherList" class = "informationable">
+            <li onclick = "load()">Click Me First!</li>
+            <li onclick = "loaddoc()">Click Me Second!</li>
+            <li onclick = "loadDoc()">You know the drill</li>
+        </ul>
+        <div id = "more"></div>
+    </body>
+</html>
