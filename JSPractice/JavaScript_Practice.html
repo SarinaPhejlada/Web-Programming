@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Exercise 1: Fibonacci Sequence</h1>
+        <p id = "fib"></p>
+        <script>
+            function fibonacci($n){
+                $x = 1;
+                $y = 0;
+                $string = "";
+                $temp = 0;
+                while($n >= 1){
+                $temp = $x;
+                $x = $x + $y;
+                $y = $temp;
+                $n--;
+                $string += " "+$y;
+                }
+                return $string;
+            }
+            document.getElementById("fib").innerHTML = fibonacci(6);
+        </script>
+        <h1>Exercise 2: Stars Pattern</h1>
+        <p id = "stars"></p>
+        <script>
+            function stars($n){
+                $string = "";
+                for($x = 1; $x <= $n; $x++){
+                    for($y = 1; $y <= $x; $y++){
+                        $string += "*";
+                    }
+                    $string += "<br>";
+                }
+                return $string;
+            }
+            document.getElementById("stars").innerHTML = stars(5);
+        </script>
+        <h1>Exercise 3: Sort an Array</h1>
+        <p id = "sort"></p>
+        <script>
+            $array = [3, 8, 7, 6, 5, -4, 3, 2, 1];
+            function sort($array){
+                $string = "Unsorted Array: " + $array;    
+                for($x = 0; $x < $array.length; $x++){
+                    for($y = $x+1; $y < $array.length; $y++){
+                        $temp = 0;
+                        if($array[$x] > $array[$y]){
+                            $temp = $array[$x];
+                            $array[$x] = $array[$y];
+                            $array[$y] = $temp;
+                        }
+                    }
+                }
+                $string += "<br>Sorted Array: " + $array;
+                return $string;
+            }
+            document.getElementById("sort").innerHTML = sort($array);
+        </script>
+        <h1>Exercise 4: Mode of an Array</h1>
+        <p id = "mode"></p>
+        <script>
+            $array = [3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
+            function mode($array){
+                $string = "";
+                $max = 0;
+                $maxcount = 0;
+                for($x=0; $x < $array.length; $x++){
+                    $count = 0;
+                    for($y=0; $y < $array.length; $y++){
+                        if($array[$y] == $array[$x])
+                            $count++;
+                    }
+                    if($count > $maxcount){
+                        $maxcount = $count;
+                        $max = $array[$x];
+                    }
+                }
+                $string = "Array: " + $array + "<br>Mode: " + $max + "<br>Count: " + $maxcount;
+                return $string;
+            }
+            document.getElementById("mode").innerHTML = mode($array);
+        </script>
+        <h1>Exercise 5: Shuffle an Array of 6 Integers</h1>
+        <p id = "shuffle"></p>
+        <script>
+            $array = [1,2,3,4,5,6];
+            function shuffle($array){
+                $string = "Unshuffled Array: " + $array;
+                $current = $array.length;
+                $temp = 0;
+                $random = 0;
+                while(0 != $current){
+                    $random = Math.floor(Math.random()*$current);
+                    $current--;
+                    $temp = $array[$current];
+                    $array[$current] = $array[$random];
+                    $array[$random] = $temp;
+                }
+                $string += "<br>Shuffled Array: " + $array;
+                return $string;
+            }
+            document.getElementById("shuffle").innerHTML = shuffle($array);
+        </script>
+    </body>
+</html>
