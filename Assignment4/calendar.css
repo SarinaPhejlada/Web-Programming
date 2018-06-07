@@ -1,0 +1,72 @@
+*
+{
+	margin:0;
+	padding:0;
+}
+
+body
+{
+	background-color:#7FDDD8;
+	font-family:verdana;
+	font-size:12px;
+}
+
+h1
+{
+	font:30pt "Georgia";
+	margin-left:10px;
+	text-align: center;
+}
+
+#options
+{
+	text-align: center;
+}
+
+table
+{
+	border-collapse:collapse;
+	border-top:5px;
+	border: 1px solid black;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+table th
+{
+	font-family: cursive;
+	color:#000;
+	font-size:24px;
+	font-weight:400;
+	padding-left:5px;
+	text-align:right;
+	text-decoration:none;
+	width:220px;
+}
+
+tr:nth-child(even)
+{
+	background-color:#86cefd;
+	height:40px;
+}
+
+tr:nth-child(odd)
+{
+	background-color:#BCE4FE;
+	height:40px;
+}
+
+table td
+{
+	text-align:left;
+	width:60px;
+}
+
+#today
+{
+	margin-bottom:10px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align: center;
+	font: 20px "Courier";
+}
