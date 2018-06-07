@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 6</title>
+        <style>
+            h1{
+                text-align: center;
+                background-color: palegreen;
+                margin: 0;
+            }
+            body{
+                background-color: paleturquoise;
+            }
+            #menu ul{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                width: 15%;
+                background-color: #f1f1f1;
+                position: fixed;
+                height: 100%;
+                overflow: hidden;
+            }
+            #menu li a{
+                display: block;
+                color: #000;
+                padding: 8px 16px;
+                text-decoration: none;
+            }
+            #menu li a.active{
+                background-color: black;
+                color: white;
+            }
+            #menu li a:hover:not(.active){
+                background-color: #555;
+                color: white;
+            }
+            #descriptions{
+                margin-left: 15%;
+                padding: 1px 16px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Assignment 6</h1>
+        <div id = "menu">
+        <ul>
+            <li><a class = "active" href = "http://codd.cs.gsu.edu/~pphejlada1/Assignment6/home.html">Home</a></li>
+            <li><a href = "http://codd.cs.gsu.edu/~pphejlada1/Assignment6/PartA.html">Part A</a></li>
+            <li><a href = "http://codd.cs.gsu.edu/~pphejlada1/Assignment6/PartB.html">Part B</a></li>
+            <li><a href = "http://codd.cs.gsu.edu/~pphejlada1/Assignment6/PartC.html">Part C</a></li>
+        </ul>
+        </div>
+        <div id = "descriptions">
+            <h2>Part A</h2>
+            An employee log program that allows the user to input the amount of hours each employee has worked until a -1 is entered.
+            After the hours are entered, the user can select the "Create Table" button to generate a table that displays how many employees were entered, 
+            how many hours each employee worked, and what each of their pay is(including overtime). Last it prints the total amount paid towards the employees.
+            <h2>Part B</h2>
+            A simple number guessing game. The program generates a random number and the user has 10 tries to guess the secret number.
+            <h2>Part C</h2>
+            A picture matching game. The user gets to choose their level of difficulty before clicking "Start". Once the game starts, a timer is set and the 
+            user has BLANK seconds to try and match all the pictures.
+        </div>
+    </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 6 Part B</title>
+        <script src = "PartB.js"></script>
+        <style>
+            h1{
+                background-color: white;
+                opacity: 0.6;
+                margin: 0px;
+                padding: 5px;
+            }
+            body{
+                text-align: center;
+                background-color: plum;
+            }
+            #menu ul{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                width: 10%;
+                background-color: #f1f1f1;
+                position: fixed;
+                height: 100%;
+                overflow: hidden;
+            }
+            #menu li a{
+                display: block;
+                color: #000;
+                padding: 8px 16px;
+                text-decoration: none;
+            }
+            #menu li a.active{
+                background-color: black;
+                color: white;
+            }
+            #menu li a:hover:not(.active){
+                background-color: #555;
+                color: white;
+            }
+            #guess{
+                margin-top: 10px;
+            }
+        </style>
+    </head>
+    <body onload = "start()">
+        <h1>Guess the Number!</h1>
+        <div id = "menu">
+            <ul>
+                <li><a class = "active" href = "http://codd.cs.gsu.edu/~pphejlada1/Assignment6/home.html">Home</a></li>
+                <li><a href = "http://codd.cs.gsu.edu/~pphejlada1/Assignment6/PartA.html">Part A</a></li>
+                <li><a href = "http://codd.cs.gsu.edu/~pphejlada1/Assignment6/PartB.html">Part B</a></li>
+                <li><a href = "http://codd.cs.gsu.edu/~pphejlada1/Assignment6/PartC.html">Part C</a></li>
+            </ul>
+        </div>
+        <audio autoplay = "autoplay" loop><source src = "Duck.mp3" type = "audio/mpeg" /></audio>
+        <input type = "text" id = "guess">
+        <button onclick = "guess()">Guess!</button>
+        <p id = "game"></p>
+        <p id = "timer"></p>
+    </body>
+</html>

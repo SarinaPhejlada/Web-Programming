@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 6 Part C</title>
+        <script src = "PartC.js"></script>
+        <style>
+            h1{
+                text-align: center;
+                background-color: darkgrey;
+                margin: 0px;
+                padding: 10px;
+            }
+            body{
+                background-color: rgb(236, 135, 198);
+                text-align: center;
+            }
+            #instructions{
+                text-align: left;
+            }
+            #memory_board{
+                margin-left: 150px;
+            }
+            #menu ul{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                width: 10%;
+                background-color: #f1f1f1;
+                position: fixed;
+                height: 100%;
+                overflow: hidden;
+            }
+            #menu li a{
+                display: block;
+                color: #000;
+                padding: 8px 16px;
+                text-decoration: none;
+            }
+            #menu li a.active{
+                background-color: black;
+                color: white;
+            }
+            #menu li a:hover:not(.active){
+                background-color: #555;
+                color: white;
+            }
+            #game{
+                margin-left: 10%;
+                padding: 1px 16px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Memory Card Flip Game!</h1>
+        <div id = "menu">
+            <ul>
+                <li><a class = "active" href = "http://codd.cs.gsu.edu/~pphejlada1/Assignment6/home.html">Home</a></li>
+                <li><a href = "http://codd.cs.gsu.edu/~pphejlada1/Assignment6/PartA.html">Part A</a></li>
+                <li><a href = "http://codd.cs.gsu.edu/~pphejlada1/Assignment6/PartB.html">Part B</a></li>
+                <li><a href = "http://codd.cs.gsu.edu/~pphejlada1/Assignment6/PartC.html">Part C</a></li>
+            </ul>
+        </div>
+        <div id = "game">
+            <div id = "instructions">
+                <h2>How to Play</h2>
+                <ol>
+                    <li>Select a level of difficulty: The level indicates how many images there will be, how long you will have to preview the images, and how long you will have to complete the game</li>
+                    <li>Click start: This will begin the game and timer</li>
+                    <li>Try your best to match all the images before time runs out</li>
+                    <li>Good luck!</li>
+                </ol>
+            </div>
+            What level of difficulty do you want to play?
+            <select id = "size">
+                <option value = "4">Easy</option>
+                <option value = "5">Medium</option>
+                <option value = "6">Hard</option>
+            </select>
+            <button onclick = "newBoard()" id = "start">Start</button>
+            <div id = "memory_board"></div>
+            <div id = "timer"></div>
+        </div>
+    </body>
+</html>

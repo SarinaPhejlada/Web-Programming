@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 6 Part A</title>
+        <script src = "PartA.js"></script>
+        <style>
+            h1{
+                background-color: white;
+                opacity: 0.6;
+                margin: 0px;
+                padding: 10px;
+            }
+            body{
+                background-color: lightseagreen;
+                text-align: center;
+            }
+            #menu ul{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                width: 10%;
+                background-color: #f1f1f1;
+                position: fixed;
+                height: 100%;
+                overflow: hidden;
+            }
+            #menu li a{
+                display: block;
+                color: #000;
+                padding: 8px 16px;
+                text-decoration: none;
+            }
+            #menu li a.active{
+                background-color: black;
+                color: white;
+            }
+            #menu li a:hover:not(.active){
+                background-color: #555;
+                color: white;
+            }
+            #game{
+                margin-left: 10%;
+                padding: 1px 16px;
+            }
+            #table{
+                margin-left: 38%;
+                font-size: 20px;
+                border: 1px solid black;
+            }
+            #table th, #table td{
+                border: 1px solid black;
+                padding: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Employee Hours</h1>
+        <div id = "menu">
+            <ul>
+                <li><a class = "active" href = "http://codd.cs.gsu.edu/~pphejlada1/Assignment6/home.html">Home</a></li>
+                <li><a href = "http://codd.cs.gsu.edu/~pphejlada1/Assignment6/PartA.html">Part A</a></li>
+                <li><a href = "http://codd.cs.gsu.edu/~pphejlada1/Assignment6/PartB.html">Part B</a></li>
+                <li><a href = "http://codd.cs.gsu.edu/~pphejlada1/Assignment6/PartC.html">Part C</a></li>
+            </ul>
+        </div>
+        <div id = "game">
+        <button onclick = "hours()" id = "entered">Click to Enter Employee Hours</button>
+        <p id = "hours"></p>
+        <table id = "table">
+            <tr>
+                <th>Employee</th>
+                <th>Hours</th>
+                <th>Pay</th>
+            </tr>
+        </table>
+        <button onclick = "createTable()">Create Table</button>
+        <p id = "total"></p>
+        </div>
+    </body>
+</html>
