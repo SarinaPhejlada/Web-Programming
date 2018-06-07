@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Validator</title>
+        <style>
+            p{
+                color: red;
+                text-decoration: underline;
+            }
+            .extra{
+                position: fixed;
+                text-align: center;
+                bottom: 1%;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <p id = "eins"></p>
+        ID: <input type = "text" id = "id">
+        <p id = "zwei"></p>
+        FirstName: <input type = "text" id = "first">
+        <p id = "drei"></p>
+        LastName: <input type = "text" id = "last">
+        <hr>
+        <input type = "submit" onclick = "check()" value = "Add">
+        <br>
+        <span id = "result"></span>
+        <span class = "extra">
+            <h1>Extra Credit</h1>
+            ID only takes numeric values
+        </span>
+    </body>
+    <script>
+        function check(){
+            var id = document.getElementById("id");
+            var first = document.getElementById("first");
+            var last = document.getElementById("last");
+            var numeric = false;
+            if(id.value.length == 0)
+                document.getElementById("eins").innerHTML = "Please Enter an ID";
+            else if(isNaN(id.value))
+                document.getElementById("eins").innerHTML = "Please Enter a valid ID";
+            else{
+                document.getElementById("eins").innerHTML = "";
+                numeric = true;
+            }
+            if(first.value.length == 0)
+                document.getElementById("zwei").innerHTML = "Please Enter a First Name";
+            else   
+                document.getElementById("zwei").innerHTML = "";
+            if(last.value.length == 0)
+                document.getElementById("drei").innerHTML = "Please Enter a Last Name";
+            else   
+                document.getElementById("drei").innerHTML = "";
+            if(id.value.length != 0 && numeric == true && first.value.length != 0 && last.value.length != 0){
+                document.getElementById("result").innerHTML = "ID: " + id.value + "<br>FirstName: " + first.value + "<br>LastName: " + last.value;
+                id.value = "";
+                first.value = "";
+                last.value = "";
+            }
+            else
+                document.getElementById("result").innerHTML = "";
+        }
+    </script>
+</html>
