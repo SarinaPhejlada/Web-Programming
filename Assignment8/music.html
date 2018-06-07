@@ -1,0 +1,26 @@
+<html>
+        <head>
+            <title>Music Form</title>
+            <style>
+                body{
+                    background-color: palegoldenrod;
+                    text-align: center;
+                    font-family: monospace;
+                }
+                h1{
+                    border: solid 15px black;
+                    background-color: rgb(114, 114, 114);
+                    font-size: 30px;
+                }
+            </style>
+        </head>
+        <body>
+            <h1>Add an Artist and Album to the Table<br> or<br>Click to View</h1>
+            <form action = "createTables.php" method = "post">
+                <label>Artist: </label><input type = "text" name = "artist"/><br>
+                <label>Album: </label><input type = "text" name = "album"/><br>
+                <input type = "submit" name = "submit" value = "Submit"/>
+                <input type = "submit" name = "view" value = "View"/>
+            </form>
+        </body>
+    </html>
