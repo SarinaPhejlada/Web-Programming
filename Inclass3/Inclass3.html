@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Inclass 3</title>
+    </head>
+    <body>
+        Enter Email to Validate Here: 
+        <input type = text id = "box"/>
+        <button onclick = "validate()" id = "valid">Validate</button>
+        <button onclick = "match()" id = "mat">Match</button>
+        <div id = "result"></div>
+        <script>
+            function validate(){
+                var email = document.getElementById("box").value;
+                var reg = /[A-Za-z]+[0-9]+@gsu.edu/g;
+                if(reg.test(email))
+                    document.getElementById("result").innerHTML = "Valid Email";
+                else   
+                    document.getElementById("result").innerHTML = "Nonvalid Email";
+            }
+            function match(){
+                var email = document.getElementById("box").value;
+                if()
+            }
+        </script>
+    </body>
+</html>
